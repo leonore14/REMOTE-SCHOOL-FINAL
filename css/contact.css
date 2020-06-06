@@ -1,5 +1,5 @@
 .top-line-header{
-    border-top: 0.25rem solid #261C52;
+    border-top: 0.188em solid #261C52;
 }
 
 .contact-wrapper{ /* */
@@ -12,7 +12,7 @@
 }
 
 .contact-title{ /*styling h2*/
-    padding: 0.5%;
+    padding: 1%;
     margin: 0 auto;
     border-bottom: 0.2rem solid #FFD33A;
     color: #261C52;
@@ -114,7 +114,7 @@
     background-color: #FFD33A;
     padding: 10px 20px;
     font-size: 1.125rem;
-    font-weight: 200;
+    font-weight: 400;
     width: 20%;
     align-self: center;
     text-align: center;
@@ -436,9 +436,14 @@
     }
     .contact-title-small{
         font-size: 1.9rem;
-        display: inline;
+        line-height: 2.25rem !important;
+        display: inline ;
     }
 
+    .contact-title-small-first{
+        border: none;
+    
+    }
     .staff-possition{
         margin-bottom: 8px;
         text-align: center;
