@@ -1,0 +1,204 @@
+/* -- General CSS--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*This part shoud be on body. Otherwhise, we cannot 
+    change the background-color (it would be overwritten) of different container for example(I had problems with the divs of footer)*/
+    /*font-family: ‘Montserrat’, sans-serif;
+    color: #261C52;
+    background-color: #F4F0EA;*/
+}
+
+body{
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    background-color: #F4F0EA; 
+    }
+
+/* -- End of General CSS--*/
+
+
+.apply-index-button{
+    padding: 1%;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+    border-style: none;
+    position: absolute;
+    margin-top : -2%;
+    margin-left : 5%;
+    overflow: visible;
+    background-color: #ffd33a ;
+    text-decoration: none;
+}
+
+.modal {
+    background-color: #F8E7C0;
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    font-size: 1.3em;
+    font-weight: 150;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    justify-self: center;
+    width: 90vw;
+    padding:3%;
+    padding-bottom: 1%;
+    position: absolute;
+    left: 5%;
+    top:55%;
+}
+
+.modal-title-font{
+    font-size: 1.6em;
+}
+
+.modal-inner {
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.separator-div-modal{
+    height: 20px;
+}
+
+.separator-div-modal-form{
+    height: 7px;
+}
+
+.contact-form-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+}
+
+.contact-form-index input {
+    background-color: #F3F1E9;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    padding-left: 4%;
+    color: #261C52;
+    height: 35px;
+}
+
+.modal-two-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send-button :hover{
+    color :#F3F1E9;
+    background-color:#261C52 ;
+    text-decoration: none;
+}
+
+
+.send-button-modal-index{
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 150;
+    border-style: none;
+    background-color: #ffd33a ;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.close-button :hover{
+    color :#F3F1E9;
+    background-color:#261C52 ;
+    text-decoration: none;
+}
+
+.close-button-modal-index{
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 150;
+    border-style: none;
+    background-color: #ffd33a ;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* ---Responsive Design MEDIUM --- */
+
+@media screen and (min-width: 768px) and (max-width:992px){
+
+    .modal {
+        font-size: 1.2em;
+    }
+
+}
+
+/* ---End of Responsive Design MEDIUM --- */
+
+
+
+/* ---Responsive Design SMALL --- */
+
+@media screen and (min-width: 576px) and  (max-width: 767px){
+
+    .modal {
+        font-size: 1.2em;
+        top : 45%;
+    }
+    
+}
+
+/* ---End of Responsive Design SMALL --- */
+
+
+
+/* ---Responsive Design EXTRA SMALL --- */
+
+@media screen and (min-width: 450px) and (max-width: 575px){
+
+    .modal {
+        font-size: 1.1em;
+        top : 30%;
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA SMALL --- */
+
+
+/* ---Responsive Design EXTRA SMALL --- */
+
+@media screen and (max-width: 449px){
+
+    .modal {
+        font-size: 0.9em;
+        top : 20%;
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA SMALL --- */

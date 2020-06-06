@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Remote School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon-remote.png"/>
+    <!--*font-family fot the search button*-->
+  </head>
+  <body>
+    <!-- NAV BAR -->
+     <header>
+
+      <nav class="navbar">
+        
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="nav-logo">
+            <img  src="images/logo2cropped.png" alt="Logo Remote School"> 
+            </a> 
+          </li>
+          
+         <div class="dropdown">
+          <li class="nav-item">
+            <a href="courses.html">COURSES<i class="fa fa-angle-down"></i></a>
+              <div class = "dropdown-content">
+                <a href="courses.html#WebDesigner">WEB&nbsp;DESIGN</a>
+                <a href="courses.html#WebDeveloper">WEB&nbsp;DEVELOPER</a>
+                <a href="courses.html#DataAnalyst">WEB&nbsp;ANALYST</a>
+              </div>
+           </li>
+          </div>
+
+        <div class="dropdown">
+          <li class="nav-item">
+            <a href="students.html">STUDENTS<i class="fa fa-angle-down"></i></a>
+              <div class = "dropdown-content">
+                <a href="students.html#Sophia">SOPHIA</a>
+                <a href="students.html#Dane">DANE</a>
+                <a href="students.html#Nina">NINA</a>
+              </div>
+          </li>
+        </div>
+
+        <div class="dropdown">
+          <li class="nav-item">
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </div>
+       </ul> 
+
+        <ul class="nav-things">
+
+           <li class="nav-item">
+             <div class = "search-container">
+             <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search">
+              </div>
+          </li>
+
+           <li class="navSignButton">
+            <button type="button">SIGN UP</button>
+           </li>
+
+           <li class="navSignButton">
+            <button type="button">SIGN IN</button>
+           </li>
+
+           <li class="navApplyButton">
+            <button type="button">APPLY NOW</button>
+           </li>
+
+        </ul>
+       <div class="resNavSection">
+        <div class="res-dropdown">
+        <div class="burgerMenu" ><i class="fa fa-bars"></i></div>
+          <div class = "res-dropdown-content">
+          <a href="courses.html">COURSES</a>
+          <a href="students.html">STUDENTS</a>
+          <a href="contact.html">CONTACT</a>
+          </div>
+        </div>
+      </div>
+       </nav>
+
+     </header>
+     <!-- END OF NAV BAR -->
+
+     <!-- BANNER -->
+     <section>
+         <div class="banner">
+             
+            <img class="banner-img" src="images/newindexbannerphoto.jpg" alt="backgroundbanner"/>
+            <img class="banner-img-small" src="images/small-screen-newindexbannerphoto.jpg" alt="smallscreenbackgroundbanner"/>
+             
+            <div class="title-text-container">
+              <img class="banner-logo" src="images/logo1.svg" alt="remoteschoollogo"/>
+              <p class="banner-slogan">The digital Remote School
+                <br> which makes you feel at home </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- END OF BANNER -->
+
+    <!-- APPLY BUTTON -->
+    <section>
+     
+      <div class="button-div">
+        <button id="apply-now-modal" class="apply-index-button">APPLY NOW</button>
+      </div>
+      
+      <div id="modal" class="modal">
+          <div class="modal-inner content center">
+  
+            <p class="modal-title-font">Thanks for applying !</p>
+              <div class="separator-div-modal"></div>
+            <p>Please leave us your name and email address below, and we will contact you very soon :-)</p>
+            
+            <div class="separator-div-modal"></div>
+  
+            <form class ="contact-form-index" method="get" id="usrform">
+              <div class="contact-fields">
+                  <label for="name"></label>
+                  <input type="text" name="name" id="name" placeholder="Name" required>
+              </div> 
+              <div class="separator-div-modal-form"></div>
+              <div class="contact-fields">
+                  <label for="email"></label>
+                  <input type="email" name="email" id="email" placeholder="Email" required> 
+              </div> 
+            </form>
+  
+            <div class="separator-div-modal"></div>
+            
+            <div class="modal-two-buttons">
+  
+              <div class="close-button">
+                <button class="close-button-modal-index" id="close-modal">x close</button>
+              </div>
+  
+              <div class="send-button">
+                <button class="send-button-modal-index" id="close-modal-send" >send !</button>
+              </div>
+            </div>
+  
+          </div>
+      </div>
+  
+      </section>
+    <!-- END OF APPLY BUTTON -->
+  
+
+    <!-- COURSES -->
+    <section>
+        <div class="separator-div"></div>
+        
+        <div class="index-h2-container">
+          <a href="courses.html" title="courses-remote"><h2 class="index-h2">COURSES</h2></a>
+        </div>
+     
+        <div class="separator-div-small"></div>
+
+        <div class="box-container">
+
+          <div class="courses-box">
+            <h4 class="courses-box-title"><a class="specific-course-title" href="courses.html#WebDesigner">Web Designer<br>Full time</a></h4>
+            <a href="courses.html#WebDesigner" title="courses-remote-webDev">
+              <img class="courses-box-img" src="images/girl-working-index-light.jpg" alt="girl-working-index" />
+            </a>
+            <p class="courses-box-p">6 months</p>
+          </div>
+
+          <div class="courses-box">
+            <h4 class="courses-box-title"><a class="specific-course-title" href="courses.html#WebDeveloper">Web Developer<br>Part time</a></h4>
+            <a href="courses.html#WebDeveloper" title="courses-remote-webDesign">
+              <img class="courses-box-img" src="images/computer-coffee-index-light.jpg" alt="girl-working-index" />
+            </a>
+            <p class="courses-box-p">8 months</p>
+          </div>
+
+          <div class="courses-box">
+            <h4 class="courses-box-title"><a class="specific-course-title" href="courses.html#DataAnalyst">Web Analyst<br>Full time</a></h4>
+            <a href="courses.html#DataAnalyst" title="courses-remote-webAnalyst">
+              <img class="courses-box-img" src="images/girl-working-dog-index-light.jpg" alt="girl-working-index" />
+            </a>
+            <p class="courses-box-p">4 months</p>
+          </div>
+
+        </div>
+
+        <div class="separator-div"></div>
+
+    </section>
+    <!-- END OF COURSES -->
+    
+    <!-- FOOTER -->
+     <footer>
+       <!-- logo div -->
+       <div class="footer-logo">
+            <a href="index.html"><img class="img-logo" src="./images/logo33.png" alt="Logo Remote School"></a>
+       </div>
+
+       <!-- ul div for content-->
+       <div class="content-footer-list">
+            <ul class="footer-col">
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="#">Terms of use</a></li>
+                <li> <a href="#">FAQ</a></li>
+                <li> <a href="#">Personal data policy</a></li>
+            </ul> 
+        </div>
+      
+      <!-- ul div  for social media-->
+      <div class="links-social-network">
+        <p>Links to our favorite networks</p>
+        <ul class="social-list">
+            <li><a href="https://www.youtube.com/"><img class="network-icons biger" src="images/icon-youtube-light.svg" alt="Youtube icon"></a></li> 
+            <li><a href="https://github.com/"><img class="network-icons biger" src="images/icon-github-light.svg" alt="Github icon"></a></li> 
+            <li><a href="https://www.linkedin.com/"><img class="network-icons" src="images/icon-linkedin-light.svg" alt="Linkedin icon"></a></li> 
+            <li><a href="https://www.facebook.com/"><img class="network-icons" src="images/icon-fb-light.svg" alt="Facebook icon"></a></li> 
+            <li><a href="https://twitter.com/explore/"><img class="network-icons" src="images/icon-twitter-light.svg" alt="Twitter icon"></a></li> 
+            <li><a href="https://www.instagram.com/"><img class="network-icons biger" src="images/icon-instagram-light.svg" alt="Instagram icon"></a></li> 
+        </ul>
+      </div>
+         
+     </footer>
+    <!-- END OF FOOTER -->
+    <script src="script.js"></script>
+  </body>
+</html>

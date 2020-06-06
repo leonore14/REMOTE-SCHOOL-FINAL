@@ -1,0 +1,990 @@
+/* -- General CSS--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*This part shoud be on body. Otherwhise, we cannot 
+    change the background-color (it would be overwritten) of different container for example(I had problems with the divs of footer)*/
+    /*font-family: ‘Montserrat’, sans-serif;
+    color: #261C52;
+    background-color: #F4F0EA;*/
+}
+
+body{
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    background-color: #F4F0EA; 
+    }
+
+a{
+    text-decoration: none;
+    color: #261C52;
+}
+
+p{
+    font-weight: 200;
+}
+
+/* -- End of General CSS--*/
+
+hr{
+    border: 2px solid #261C52;
+}
+
+/* Changes to Leonors CSS */
+
+.separator-div{
+    height:150px;
+}
+
+.separator-div-small{
+    height:85px;
+}
+
+.separator-div-afterText{
+    height:60px;
+}
+
+.separator-div-supersmall{
+    height:60px;
+}
+
+
+.text-abovex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-h2 .cspage-courses-section {
+    font-size: 2.2em;
+    font-weight: 300;
+    color:#261C52;
+    text-decoration: none;
+   }
+
+
+/* --End of Courses Carousel section --*/
+
+/* individal course section */
+
+.cspage-course-titel{
+    display: flex;
+    justify-content: center;
+    padding: 0em 13em; 
+}
+
+.cspage-h2-container{
+    border-bottom: 0.2rem solid #FFD33A;
+    height: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    width : min-content;
+    padding-bottom: 1%;
+}
+
+.cspage-description {
+    width: 90%; 
+    font-size: 1.6em;
+    padding-left: 3em; 
+    line-height: 130%;
+    text-align: justify;
+}
+
+
+/* section with course description */
+.container-pics {
+    flex-wrap: wrap;
+}
+
+/* course-side */
+/* Webdesign */
+.course-part-1{
+    position: relative; 
+    width: 100%; 
+    height: 600px; 
+}
+
+.webdesign-background-sqare {
+    position: absolute; 
+    border: 4px solid #261C52;
+    border-left-style: none;
+    top: 20%; 
+    left: 30%; 
+    height: 50%; 
+    width: 40%; 
+}
+
+.course-pics{
+    width: 100%; 
+    overflow: hidden; 
+    border-radius: 20px; 
+    border: 4px solid #261C52;  
+}
+
+.webdesign-first-pic {
+    position: absolute; 
+    padding: 0;  
+    width: 31%;
+    left: 20%;
+}
+
+.webdesign-text-box{
+    position: absolute; 
+    padding: 1em; 
+    font-size: 1.25em;
+    width: 18%; 
+    border: 4px solid #261C52; 
+    border-radius: 20px;
+    background-color:#FCFAF9; 
+    top: 32%; 
+    left: 60%; 
+}
+
+.webdesign-second-pic{
+    position: absolute;
+    padding: 0; 
+    width: 20%;    
+    top: 60%; 
+    left: 30%;
+}
+
+/* Buttons beneath Courses */
+
+
+.subtitle-textbox{
+    background-color:#F8E7C0; 
+    font-size: 1.5em;
+    padding: 1em; 
+    margin: auto;
+    text-align: center;
+    width: 50%; 
+    border-radius: 20px;
+}
+
+.course-buttons{
+    width: 50%; 
+    margin: auto; 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.apply-button-div :hover, .syllabus-button-div :hover{
+    color :#F3F1E9;
+    background-color:#261C52 ;
+    text-decoration: none;
+}
+
+.apply-course-button{
+    padding: 10%;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    border-style: none;
+    background-color: #ffd33a ;
+    text-decoration: none; 
+}
+
+.syllabus-course-button{
+    padding: 8%;
+    border-radius: 20px;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    border-style: none; 
+    background-color: #F3F1E9 ;
+    color: #261C52; 
+    text-decoration: none;
+    border: 4px solid #261C52;
+}
+
+/* course-side */
+/* Developer */
+
+.course-part-2{
+    position: relative; 
+    width: 100%; 
+    height: 540px; 
+}
+
+.dev-background-sqare {
+    position: absolute; 
+    border: 4px solid #261C52;
+    border-right-style: none;
+    top: 18%; 
+    left: 30%; 
+    height: 50%; 
+    width: 40%; 
+}
+
+.dev-pics{
+    width: 100%; 
+    overflow: hidden; 
+    border: 4px solid #261C52;  
+    border-radius: 20px; 
+}
+
+.dev-first-pic {
+    position: absolute; 
+    padding: 0; 
+    width: 25%;
+    left: 52%; 
+}
+
+.dev-text-box{
+    position: absolute; 
+    padding: 1em; 
+    font-size: 1.25em;
+    width: 20%; 
+    border: 4px solid #261C52; 
+    border-radius: 20px;
+    background-color: #FCFAF9; 
+    top: 28%; 
+    left: 20%; 
+}
+
+.dev-second-pic{
+    position: absolute;
+    padding: 0; 
+    width: 15%;    
+    top: 50%; 
+    left: 55%;
+}
+
+/* Webdesign */
+
+.course-part-3{
+    position: relative; 
+    width: 100%; 
+    height: 640px; 
+}
+
+.data-background-sqare {
+    position: absolute; 
+    border: 4px solid #261C52;
+    border-left-style: none;
+    top: 18%; 
+    left: 30%; 
+    height: 60%; 
+    width: 40%; 
+}
+
+.data-first-pic {
+    position: absolute; 
+    padding: 0;  
+    width: 28%;
+    left: 20%;
+}
+
+.data-text-box{
+    position: absolute; 
+    padding: 1em; 
+    font-size: 1.25em;
+    width: 18%; 
+    border: 4px solid #261C52; 
+    border-radius: 20px;
+    background-color: #FCFAF9; 
+    top: 35%; 
+    left: 60%; 
+}
+
+.data-second-pic{
+    position: absolute;
+    padding: 0; 
+    width: 15%;    
+    top: 62%; 
+    left: 30%;
+}
+
+
+/* ---Responsive Design EXTRA SUPER LARGE --- */
+@media screen and (min-width: 1500px){
+
+    .course-part-1{ 
+        height: 700px; 
+    }
+
+    .course-part-2{
+        height: 670px; 
+    }
+    .course-part-3{
+        height: 700px;
+    }
+}
+
+/* ---End of Responsive Design EXTRA SUPER LARGE --- */
+
+
+/* ---No Responsive Design SUPER LARGE screen as already defined on css--- */
+
+
+/* ---Responsive Design LARGE --- */
+
+@media screen and (min-width: 992px) and (max-width:1199px){
+
+    .course-part-1{ 
+        height: 600px; 
+    }
+
+    .course-part-2{
+        height: 510px; 
+    }
+
+    .course-part-3{
+        height: 620px;
+    }
+
+    .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; 
+    } 
+
+    .index-h2 {
+        text-align: center; 
+        }
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* ---End of Responsive Design LARGE --- */
+
+
+
+/* ---Responsive Design MEDIUM --- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .separator-div{
+        height: 135px;
+    }
+    
+    .index-h2 {
+        font-size: 2.1em;
+        text-align: center; 
+    }
+
+    .course-part-1{
+        height: 800px; 
+    }
+
+    .course-part-2{
+        height: 995px; 
+    }
+
+    .course-part-3{
+        height: 905px; 
+    }
+
+    .separator-div-afterText{
+        height:15px;
+    }
+
+   .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; 
+    } 
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+        display: none; 
+    }
+
+    .webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+        position: static; 
+        width: 45%; 
+        margin: auto; 
+        padding: 40px 0px; 
+        }
+
+    .webdesign-text-box, .dev-text-box, .data-text-box {
+        position: static; 
+        width: 45%; 
+        margin: auto; 
+    }
+   
+    .subtitle-textbox {
+        position: static; 
+        width: 45%; 
+        margin: auto; 
+        margin-top: 60px; 
+        font-size: 1.1em;
+        font-weight: 300; 
+        text-align: left; 
+    }
+
+    .course-buttons {
+        width: 70%;  
+    }
+
+    .course-pics {
+        border: none; 
+    }
+}
+
+/* ---End of Responsive Design MEDIUM --- */
+
+
+/* ---Responsive Design SMALLMED --- */
+
+@media screen and (min-width: 691px) and  (max-width: 767px) {
+
+    /* --Courses Carousel section --*/
+
+    .separator-div{
+        height:120px;
+    }
+
+    .index-h2 {
+        font-size: 2em;
+        text-align: center; 
+    }
+
+    .separator-div-small{
+        height:60px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-box{
+        width : 55%;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    .courses-box-title{
+        padding: 5%;
+        font-size: 1.5em;
+        font-weight: 380;
+    }
+
+    /* --End of Courses Carousel section --*/  
+
+    .course-part-1{
+        height: 780px; 
+    }
+
+    .course-part-2{
+        height: 970px; 
+    }
+
+    .course-part-3{
+        height: 880px; 
+    }
+
+    .separator-div-afterText{
+        height:15px;
+    }
+
+   .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; 
+    } 
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+        width:75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+        display: none; 
+    }
+
+    .webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        padding: 40px 0px; 
+        }
+
+    .webdesign-text-box, .dev-text-box, .data-text-box {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+    }
+   
+    .subtitle-textbox {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        margin-top: 60px; 
+        font-size: 1.1em;
+        font-weight: 300; 
+        text-align: left; 
+    }
+
+    .course-buttons {
+        width: 80%;  
+    }
+
+    .course-pics {
+        border: none; 
+    }
+
+}
+
+/* ---End of Responsive Design SMALLMED --- */
+
+
+/* ---Responsive Design SMALL --- */
+
+@media screen and (min-width: 576px) and  (max-width: 690px) {
+
+    /* --Courses Carousel section --*/
+
+    .separator-div{
+        height:120px;
+    }
+
+    .index-h2 {
+        font-size: 2em;
+        text-align: center; 
+    }
+
+    .separator-div-small{
+        height:60px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-box{
+        width : 55%;
+        padding: 2%;
+        margin: 1%;
+    }
+
+    .courses-box-title{
+        padding: 5%;
+        font-size: 1.5em;
+        font-weight: 380;
+    }
+
+
+    /* --End of Courses Carousel section --*/  
+
+    .course-part-1{
+        height: 740px; 
+    }
+
+    .course-part-2{
+        height: 890px; 
+    }
+
+    .course-part-3{
+        height: 810px; 
+    }
+
+    .separator-div-afterText{
+        height:15px;
+    }
+
+   .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; } 
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+    }
+
+    .webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+        display: none; 
+    }
+
+    .webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        padding: 40px 0px; 
+        }
+
+    .webdesign-text-box, .dev-text-box, .data-text-box {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+    }
+
+    .subtitle-textbox {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        margin-top: 60px; 
+        font-size: 1.1em;
+        font-weight: 300; 
+        text-align: left; 
+    }
+
+    .course-buttons {
+        width: 80%;  
+    }
+
+    .course-pics {
+        border: none; 
+    }
+
+}
+
+/* ---End of Responsive Design SMALL --- */
+
+
+/* ---Responsive Design EXTRA SMALL --- */
+
+@media screen and (min-width: 526px) and (max-width: 575px){
+
+    /* --Courses Carousel section --*/
+
+    .separator-div{
+        height:120px;
+    }
+
+    .index-h2 {
+        font-size: 1.9em;
+        text-align: center; 
+    }
+
+    .separator-div-small{
+        height:60px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-box{
+        width : 53%;
+        padding: 2%;
+    }
+
+    .courses-box-title{
+        padding: 5%;
+        font-size: 1.4em;
+        font-weight: 380;
+    }
+
+
+    /* --End of Courses Carousel section --*/  
+
+    .course-part-1{
+        height: 650px; 
+    }
+
+    .course-part-2{
+        height: 770px; 
+    }
+
+    .course-part-3{
+        height: 720px; 
+    }
+
+    .separator-div-afterText{
+        height:15px;
+    }
+    
+   .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; } 
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+    }
+
+    .webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+        display: none; 
+    }
+
+    .webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        padding: 40px 0px; 
+        }
+
+    .webdesign-text-box, .dev-text-box, .data-text-box {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+    }
+
+    .subtitle-textbox {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        margin-top: 60px; 
+        font-size: 1.1em;
+        font-weight: 300; 
+        text-align: left; 
+    }
+
+    .course-buttons {
+        width: 80%;  
+    }
+
+
+    .course-pics {
+        border: none; 
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA SMALL --- */
+
+
+/* ---Responsive Design EXTRA EXTRA SMALL --- */
+
+@media screen and (min-width: 450px) and (max-width: 525px){
+
+    /* --Courses Carousel section --*/
+
+    .separator-div{
+        height:100px;
+    }
+
+    .index-h2 {
+        font-size: 1.9em;
+        text-align: center; 
+    }
+
+    .separator-div-small{
+        height:80px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-box{
+        width : 60%;
+        padding: 4%;
+    }
+
+    .courses-box-title{
+        padding: 5%;
+        font-size: 1.3em;
+        font-weight: 365;
+    }
+
+
+    /* --End of Courses Carousel section --*/  
+
+    .course-part-1{
+        height: 630px; 
+    }
+
+    .course-part-2{
+        height: 740px; 
+    }
+
+    .course-part-3{
+        height: 690px; 
+    }
+
+    .separator-div-afterText{
+        height:15px;
+    }
+    
+   .cspage-course-titel {
+        padding: 0em 0em;
+        flex-direction: column; } 
+
+    .cspage-description {
+        padding-top: 1.5em; 
+        font-size: 1.3em;
+        font-weight: 300; 
+    }
+
+    .webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+        display: none; 
+    }
+
+    .webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        padding: 40px 0px; 
+        }
+
+    .webdesign-text-box, .dev-text-box, .data-text-box {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+    }
+
+    .subtitle-textbox {
+        position: static; 
+        width: 55%; 
+        margin: auto; 
+        margin-top: 60px; 
+        font-size: 1.1em;
+        font-weight: 300; 
+        text-align: left; 
+    }
+
+    .course-buttons {
+        width: 80%;  
+    }
+
+    .course-pics {
+        border: none; 
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA EXTRA SMALL --- */
+
+
+/* ---Responsive Design EXTRA EXTRA EXTRA !! SMALL --- */
+
+@media screen and (max-width: 449px){
+
+/* --Courses Carousel section --*/
+
+.index-h2 {
+    font-size: 1.6em;
+    text-align: center; 
+}
+
+.box-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses-box{
+    width : 62%;
+    padding: 5%;
+}
+
+.courses-box-title{
+    padding: 5%;
+    font-size: 1.2em;
+    font-weight: 350;
+}
+
+/* --End of Courses Carousel section --*/
+
+.separator-div{
+    height:100px;
+}
+
+.course-part-1{
+    height: 555px; 
+}
+
+.course-part-2{
+    height: 660px; 
+}
+
+.course-part-3{
+    height: 600px; 
+}
+
+.separator-div-afterText{
+    height:5px;
+}
+
+.cspage-course-titel {
+    padding: 0em 0em;
+    flex-direction: column; 
+} 
+
+.cspage-description {
+    padding-top: 1.5em; 
+    font-size: 1.1em;
+    font-weight: 300; 
+}
+
+.webdesign-background-sqare, .dev-background-sqare, .data-background-sqare {
+    display: none; 
+}
+
+.webdesign-first-pic, .webdesign-second-pic, .dev-first-pic, .dev-second-pic, .data-first-pic, .data-second-pic {
+    position: static; 
+    width: 60%; 
+    margin: auto; 
+    padding: 40px 0px; 
+    }
+
+.webdesign-text-box, .dev-text-box, .data-text-box {
+    position: static; 
+    width: 60%; 
+    margin: auto; 
+    font-size: 1em;
+}
+
+.subtitle-textbox {
+    position: static; 
+    width: 60%; 
+    margin: auto; 
+    margin-top: 60px; 
+    font-size: 0.9em;
+    font-weight: 300; 
+    text-align: left; 
+}
+
+.separator-div-small{
+    height:70px;
+}
+
+.separator-div-supersmall{
+    height:40px;
+}
+
+.course-buttons {
+    width: 80%;
+    display:flex; 
+    flex-direction: column; 
+}
+
+.apply-button-div{
+    width : 50%;
+    margin-bottom:4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.extra-button-syl-div{
+    width : 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-pics {
+    border: none; 
+}
+
+}
+
+
+/* ---END OF  Responsive Design EXTRA EXTRA EXTRA !! SMALL --- */

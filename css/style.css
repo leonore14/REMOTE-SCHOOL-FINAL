@@ -1,0 +1,490 @@
+/* -- General CSS--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*This part shoud be on body. Otherwhise, we cannot 
+    change the background-color (it would be overwritten) of different container for example(I had problems with the divs of footer)*/
+    /*font-family: ‘Montserrat’, sans-serif;
+    color: #261C52;
+    background-color: #F4F0EA;*/
+}
+
+body{
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    background-color: #F4F0EA; 
+    }
+
+/* -- End of General CSS--*/
+
+/* --Navbar section --*/
+
+.burgerMenu{
+    display:none; 
+}
+
+.navbar {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;  
+   background: #F3F1E9; 
+}
+
+.nav-logo {
+    display: inline-block;
+}
+
+.nav-logo img{
+    width: 11em;
+    align: center; 
+}
+
+.nav-links, .nav-things {
+    /* i had to put display: flex and align-items: center i again,
+     to align the items in the nav-links-section */
+    display:flex; 
+    align-items: center;
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    /* font-weight: 600; */
+    color: #261C52; 
+}
+
+.nav-item, .navApplyButton, .navSignButton{
+    display: inline-block; 
+    margin: 1em; 
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown :hover{
+    cursor:pointer; 
+    color: #F4F0EA; 
+    background-color:  #261C52; 
+    border-radius: 10px; 
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #261C52; 
+    background-color: #F4F0EA;
+    }
+  
+.nav-item a.active {
+    color: #F4F0EA; 
+    background-color:  #261C52; 
+    border-radius: 12px; 
+    padding: 10px; 
+  }
+
+.nav-item a:hover {
+    color: #F4F0EA; 
+    border-radius: 12px; 
+    padding: 7px; 
+}
+
+.navApplyButton, .navSignButton { 
+	border-radius: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: cell;
+  }
+
+.navSignButton{
+    border: 1px solid #261C52;
+}
+
+.navApplyButton {
+    background-color: #ffd33a;
+	border: none; 
+  }
+
+button{
+    background-color: transparent;
+    border: none; 
+    display: inline-block;
+    padding: 5% 10px;   
+}
+
+.navApplyButton:hover,.navSignButton:hover {
+    box-shadow: #261C52 4px 0.3em 0em 0px;   
+}
+
+/*search-bar*/
+
+.search-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-container button {
+    float: left; 
+    font-size: 20px;
+    border: none;
+    cursor: pointer;  
+}
+
+.search-container input {
+    border-radius: 7px;
+    padding: 3px;
+}
+
+
+/* dropdown-Menü Start */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    min-width: 100px;    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #261C52;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #F4F0EA;
+    text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color:  #261C52; 
+    color: #F4F0EA; 
+    padding: 1em; 
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 5;
+  overflow: visible;
+}
+
+/* dropdown- menü end */
+.resNavSection {
+    display: none; }
+
+/* --Footer section --*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #261C52;
+    padding: 30px 20px;
+    color:#F4F0EA; 
+}
+
+.content-footer-list{
+    align-self: center;
+}
+
+.footer-col{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: #261C52;
+}
+
+.footer-col li{
+    list-style: none;
+    margin: 0;
+    background-color: #261C52;
+}
+
+.footer-col li a{
+    padding: 0 25px;
+    color:#F4F0EA;
+    font-size: 1.125rem; 
+    font-weight: lighter;
+}
+
+.footer-col a{
+    text-decoration: none;
+    color: #261C52;
+}
+
+.footer-col a:hover{
+    /*color: #FFD33A;*/
+    filter: brightness(0.8);
+}
+
+.footer-logo{
+    align-self: center;
+}
+
+.footer-logo:hover{
+    /* filter: invert(80);*/
+    filter: brightness(0.7);
+ }
+
+.img-logo {
+    width: 65%;
+}
+
+.network-icons{
+    width: 30px;
+    height: 30px;
+}
+
+.network-icons:hover{
+   /* filter: invert(80);*/
+   filter: brightness(0.7);
+}
+
+.biger{
+    width: 40px;
+    height: 40px; 
+}
+
+.links-social-network{
+    display: flex;
+    flex-direction: column;
+}
+
+.links-social-network p{
+    font-size: 1.125rem; 
+    font-weight: lighter;
+}
+
+.social-list{
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #261C52;
+    align-items: center;
+}
+
+.social-list li{
+    margin: 0;
+    padding: 0 15px 0 0;
+    background-color: #261C52;
+}
+
+.social-list li a{
+    padding: 5px 20px;
+}
+
+.social-list li a:nth-child(1){
+    padding-left: 0px;
+}
+.social-list li a:last-child{
+    padding-right: 0px;
+}
+
+/*--End Footer section --*/
+
+/* ---Responsive Design--- */
+
+@media (max-width: 768px){
+    /* navbar-section */
+
+.navbar {
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 6em; 
+    padding: 10px; 
+}
+
+.nav-item {
+    margin: 0em;
+}
+
+.resNavSection{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burgerMenu{
+    display: block; 
+}
+
+.burgerMenu .fa{
+    font-size: 25px;
+    padding: 10px; 
+}
+
+.nav-links .dropdown, .nav-things {
+    display:none; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.res-dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.res-dropdown-content {
+    display: none; 
+    position: absolute; 
+    min-width: 100px;    
+}
+
+/* Links inside the dropdown */
+.res-dropdown-content a {
+    color: #261C52;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #F4F0EA;
+    text-align: right;
+    border-radius: 6px;
+    
+}
+
+/* Change color of dropdown links on hover */
+.res-dropdown-content a:hover {
+    background-color:  #261C52; 
+    color: #F4F0EA; 
+}
+
+/* Show the dropdown menu on hover */
+.res-dropdown:hover .res-dropdown-content {
+  display: block;
+  z-index: 5;
+  overflow: visible;
+  right: 0; 
+}
+
+/*Responsive footer max-width: 768px*/
+footer{
+    flex-direction: column;
+}
+
+.footer-col li a{
+    padding-left: 0;
+    padding-right: 3%;
+}
+.img-logo{
+    width: 40%;
+}
+.footer-logo{
+    padding-bottom: 15px;
+    align-self: start;
+    padding-left: 3%;
+}
+
+.footer-col{
+    justify-content: left;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.footer-col li{
+    padding: 3px 0;
+}
+
+.footer-col li a, .links-social-network p{
+    font-size: 1rem; 
+    line-height: 1.125rem;
+}
+
+.content-footer-list, .links-social-network{
+    align-self: start;
+    width: 100%;
+    padding: 20px 5%;
+}
+  
+.social-list{
+    justify-content: space-between;
+    width: 60%;
+}
+
+.social-list li{
+    padding: 0 5px 0 0;
+}
+/* end Responsive footer max-width: 768px*/
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    /* Responsive footer 992px and 1199px*/
+    .footer-logo{
+        padding-bottom: 15px;
+        align-self: start;
+        padding-left: 2%;
+    }
+    
+  
+    .footer-col{
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 0px;
+      padding-bottom: 20px;
+     
+    }
+  
+    .footer-col li{
+        padding: 3px 0;
+    }
+  
+    /*.content-footer-list, .links-social-network{
+      align-self: start;
+    }*/
+  
+   .links-social-network{
+      padding: 20px 25px;
+      align-self: start;
+      width: 40%;
+      align-self: start;
+     }
+
+    .content-footer-list{
+      width: 30%;
+    } /* end Responsive footer 992px and 1199px*/
+}
+
+@media  (min-width: 768px) and (max-width:992px){
+/* Responsive footer 768px and 992px */
+  .footer-logo{
+      padding-bottom: 15px;
+      /*align-self: start;*/
+      padding-left: 2%;
+      align-items: center;
+  }
+
+  .img-logo{
+    width: 60%;
+    /*padding-left: 2%;*/
+   }
+  .footer-col{
+    justify-content: left;
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .footer-col li{
+      padding: 3px 0;
+  }
+
+  .content-footer-list, .links-social-network{
+    align-self: start;
+    width: 50%;
+  }
+
+ .links-social-network{
+    padding: 20px 25px;
+   }
+   
+ /* end Responsive footer 768px and 992px */
+}
+

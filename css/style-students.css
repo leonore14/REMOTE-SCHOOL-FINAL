@@ -1,0 +1,704 @@
+/* -- General CSS--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*This part shoud be on body. Otherwhise, we cannot 
+    change the background-color (it would be overwritten) of different container for example(I had problems with the divs of footer)*/
+    /*font-family: ‘Montserrat’, sans-serif;
+    color: #261C52;
+    background-color: #F4F0EA;*/
+}
+
+body{
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    background-color: #F4F0EA; 
+    }
+
+a{
+    text-decoration: none;
+    color: #261C52;
+}
+/* -- End of General CSS--*/
+
+
+/* --Students Title --*/
+
+hr{
+    border: 2px solid #261C52;
+}
+
+.separator-div{
+    height:150px;
+}
+
+.separator-div-small{
+    height:85px;
+}
+
+.separator-div-extrasmall{
+    height:10px;
+}
+
+.separator-div-students{
+    height: 40px;
+}
+
+.student-h2-container{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 0.2rem solid #FFD33A;
+    padding-bottom: 1%;
+    white-space: nowrap;
+    width : min-content;
+}
+
+.students {
+    font-size: 2.2em;
+    font-weight: 300;
+    color:#261C52;
+    text-decoration: none;
+   }
+
+/* --End of Students Title --*/
+
+
+/* --Students main section Sophia & Nina --*/
+
+.box-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.students-box{
+    width : 100%;
+    display: flex;
+    position: relative;
+    margin-left: -15%;
+}
+
+.student-portrait{
+    width : 35%;
+    margin-right: auto;
+    margin-left: 0;
+    overflow : visible;
+    position: relative;
+    left: 15%;
+    z-index: 1;
+}
+
+.students-box-img{
+    width : 100%;
+    border-radius: 200%;
+    border : solid #F4F0EA 30px;
+}
+
+.student-text{
+    width : 65%;
+    height : 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction : column;
+    position: relative;
+    z-index: -1;
+}
+
+.student-testimonial{
+    background-color: #F8E7C0;
+    padding : 3%;
+    padding-left : 30%;
+    font-size: 1em;
+    font-weight: 80;
+    text-align: center;
+}
+
+.student-link{
+    background-color: #F8E7C0;
+    padding : 3%;
+    padding-left : 30%;
+    font-size: 1em;
+    font-weight: 80;
+    text-align: center;
+}
+
+/* --End of Students main section Sophia & Nina --*/
+
+/* --Students main section Dane --*/
+
+.box-container-Dane{
+    display: flex;
+    justify-content: space-evenly;
+    width : 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.students-box-Dane{
+    width : 100%;
+    display: flex;
+    position: relative;
+    margin-right: -15%;
+}
+
+.student-text-Dane{
+    width : 65%;
+    height : 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction : column;
+    position: relative;
+    z-index: -1;
+}
+
+.student-testimonial-Dane{
+    background-color: #F8E7C0;
+    padding : 3%;
+    padding-right : 30%;
+    font-size: 1em;
+    font-weight: 80;
+    text-align: center;
+}
+
+.student-link-Dane{
+    background-color: #F8E7C0;
+    padding : 3%;
+    padding-right : 30%;
+    font-size: 1em;
+    font-weight: 80;
+    text-align: center;
+}
+
+.student-portrait-Dane{
+    width : 35%;
+    margin-left: auto;
+    margin-right: 0;
+    overflow : visible;
+    position: relative;
+    right: 15%;
+    z-index: 1;
+}
+
+.students-box-img-Dane{
+    width : 100%;
+    border-radius: 200%;
+    border : solid #F4F0EA 30px;
+}
+
+/* --End of Students main section Dane --*/
+
+/* Extra code for Dane small screen --*/
+
+.box-container-Dane-small{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.students-box-Dane-small{
+    width : 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+   
+.student-portrait-Dane-small{
+    width : 87%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow : visible;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -35%;
+}
+
+.students-box-img-Dane-small{
+    width : 100%;
+    border-radius: 200%;
+    border : solid #F4F0EA 30px;
+}
+
+.student-text-Dane-small{
+    width : 80%;
+    height : 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction : column;
+    position: relative;
+    z-index: -1;
+}
+
+.student-testimonial-Dane-small{
+    background-color: #F8E7C0;
+    padding: 9%;
+    padding-top : 50%;
+    font-size: 1em;
+    font-weight: 80;
+    text-align: center;
+}
+
+.student-link-Dane-small{
+    padding : 9%;
+    font-size: 1em;
+    background-color: #F8E7C0;
+    font-weight: 80;
+    text-align: center;
+}
+
+/* End of Extra code for Dane small screen --*/
+
+
+
+
+/* ---Responsive Design EXTRA LARGE --- */
+
+@media screen and (min-width: 1200px){
+
+    .student-h2-container-ex-small{
+        display: none;
+    }
+
+    .box-container-Dane-small{
+        display: none;
+    }
+
+    .box-container{
+        width: 80%;
+    }
+
+    .student-portrait{
+        width : 30%;
+        left: 20%;
+    }
+
+    .box-container-Dane{
+        width: 80%;
+    }
+
+    .student-portrait-Dane{
+        width : 30%;
+        right: 20%;
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA LARGE --- */
+
+
+
+/* ---Responsive Design LARGE --- */
+
+@media screen and (min-width: 992px) and (max-width:1199px){
+
+    .student-h2-container-ex-small{
+        display: none;
+    }
+    
+    .box-container-Dane-small{
+        display: none;
+    }
+
+    .box-container{
+        width: 75%;
+    }
+
+    .student-portrait{
+        width : 40%;
+        left: 15%;
+    }
+
+    .student-testimonial{
+        padding:4%;
+        padding-left : 32%;
+    }
+    
+    .student-link{
+        padding : 4%;
+        padding-left : 30%;
+    }
+
+    .box-container-Dane{
+        width: 75%;
+    }
+
+    .student-portrait-Dane{
+        width : 40%;
+        right: 15%;
+    }
+
+    .student-testimonial-Dane{
+        padding:4%;
+        padding-right : 32%;
+    }
+    
+    .student-link-Dane{
+        padding : 4%;
+        padding-right : 30%;
+    }
+
+}
+
+/* ---End of Responsive Design LARGE --- */
+
+
+
+/* ---Responsive Design MEDIUM --- */
+
+@media screen and (min-width: 768px) and (max-width:992px){
+
+    .student-h2-container-ex-small{
+        display: none;
+    }
+
+    .separator-div{
+        height:140px;
+    }
+
+    .separator-div-small{
+        height:105px;
+    }
+
+    .separator-div-students{
+        height: 100px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .students-box{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    .student-portrait{
+        width : 65%;
+        margin-left: auto;
+        left: 0%;
+        margin-bottom: -30%;
+    }
+     
+    .student-text{
+        width : 55%;
+        flex-direction : column;
+    }
+    
+    .student-testimonial{
+        padding: 9%;
+        padding-top : 65%;
+        font-size: 1em;
+    }
+    
+    .student-link{
+        padding : 9%;
+        font-size: 1em;
+    }
+
+    .box-container-Dane{
+        display: none;
+    }
+
+    .student-portrait-Dane-small{
+        width : 65%;
+        margin-bottom: -30%;
+    }
+
+    .student-text-Dane-small{
+        width : 55%;
+    }
+
+    .student-testimonial-Dane-small{
+        padding-top : 65%;
+    }
+
+}
+
+/* ---End of Responsive Design MEDIUM --- */
+
+
+
+/* ---Responsive Design SMALL --- */
+
+@media screen and (min-width: 576px) and  (max-width: 767px){
+
+    .student-h2-container-ex-small{
+        display: none;
+    }
+    
+    .students {
+        font-size: 2em;
+    }
+
+    .separator-div{
+        height:140px;
+    }
+
+    .separator-div-small{
+        height:105px;
+    }
+
+    .separator-div-students{
+        height: 100px;
+    }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .students-box{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    .student-portrait{
+        width : 87%;
+        margin-left: auto;
+        left: 0%;
+        margin-bottom: -35%;
+    }
+     
+    .student-text{
+        width : 80%;
+        flex-direction : column;
+    }
+    
+    .student-testimonial{
+        padding: 9%;
+        padding-top : 50%;
+        font-size: 1em;
+    }
+    
+    .student-link{
+        padding : 9%;
+        font-size: 1em;
+    }
+
+    .box-container-Dane{
+        display: none;
+    }
+
+}
+
+/* ---End of Responsive Design SMALL --- */
+
+
+
+/* ---Responsive Design EXTRA SMALL --- */
+
+@media screen and (min-width: 450px) and (max-width: 575px){
+
+    .students {
+        font-size: 2em;
+    }
+
+    .separator-div{
+        height:140px;
+    }
+
+    .separator-div-small{
+        height:105px;
+    }
+
+    .separator-div-students{
+        height: 100px;
+    }
+
+
+    .student-h2-container{
+        display: none;
+    }
+
+    .student-h2-container-ex-small{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 0.2rem solid #FFD33A;
+        padding-bottom: 1%;
+        white-space: nowrap;
+        width : min-content;
+    }
+
+    .students-ex-small {
+        font-size: 1.9em;
+        font-weight: 300;
+        color:#261C52;
+        text-decoration: none;
+       }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .students-box{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    .student-portrait{
+        width : 94%;
+        margin-left: auto;
+        left: 0%;
+        margin-bottom: -40%;
+    }
+     
+    .student-text{
+        width : 85%;
+        flex-direction : column;
+    }
+    
+    .student-testimonial{
+        padding: 10%;
+        padding-top : 55%;
+    }
+    
+    .student-link{
+        padding : 10%;
+    }
+
+    .box-container-Dane{
+        display: none;
+    }
+       
+    .student-portrait-Dane-small{
+        width : 94%;
+        margin-bottom: -40%;
+    }
+
+    .student-text-Dane-small{
+        width : 85%;
+    }
+    
+    .student-testimonial-Dane-small{
+        padding: 10%;
+        padding-top : 55%;
+    }
+    
+    .student-link-Dane-small{
+        padding : 10%;
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA SMALL --- */
+
+
+
+/* ---Responsive Design EXTRA EXTRA SMALL --- */
+
+@media screen and (max-width: 449px){
+
+    .separator-div{
+        height:120px;
+    }
+
+    .separator-div-small{
+        height:70px;
+    }
+
+    .separator-div-students{
+        height: 90px;
+    }
+
+    .student-h2-container{
+        display: none;
+    }
+
+    .student-h2-container-ex-small{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 0.2rem solid #FFD33A;
+        padding-bottom: 1%;
+        white-space: nowrap;
+        width : min-content;
+        font-size: 0.9em;
+    }
+
+    .students-ex-small {
+        font-size: 1.9em;
+        font-weight: 300;
+        color:#261C52;
+        text-decoration: none;
+       }
+
+    .box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .students-box{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    
+    .student-portrait{
+        width : 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0%;
+        margin-bottom: -40%;
+    }
+     
+    .student-text{
+        width : 90%;
+        flex-direction : column;
+    }
+    
+    .student-testimonial{
+        padding: 10%;
+        padding-top : 55%;
+    }
+    
+    .student-link{
+        padding : 10%;
+    }
+
+    .box-container-Dane{
+        display: none;
+    }
+       
+    .student-portrait-Dane-small{
+        width : 100%;
+        margin-bottom: -40%;
+    }
+
+    .student-text-Dane-small{
+        width : 90%;
+    }
+    
+    .student-testimonial-Dane-small{
+        padding: 10%;
+        padding-top : 55%;
+    }
+    
+    .student-link-Dane-small{
+        padding : 10%;
+    }
+
+}
+
+/* ---End of Responsive Design EXTRA EXTRA SMALL --- */

@@ -1,0 +1,228 @@
+/* -- General CSS--*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    /*This part shoud be on body. Otherwhise, we cannot 
+    change the background-color (it would be overwritten) of different container for example(I had problems with the divs of footer)*/
+    /*font-family: ‘Montserrat’, sans-serif;
+    color: #261C52;
+    background-color: #F4F0EA;*/
+}
+
+body{
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    background-color: #F4F0EA; 
+    }
+
+/* -- End of General CSS--*/
+
+
+
+/* -- MODAL 1--*/
+
+.modal1 {
+    background-color: #F8E7C0;
+    font-family: ‘Montserrat’, sans-serif;
+    text-decoration: none;
+    color: #261C52;
+    font-size: 1.3em;
+    font-weight: 150;
+    display: none;
+    align-self: center;
+    justify-self: center;
+    margin-left: -80%;
+    margin-right: -80%;
+    padding:3%;
+    padding-bottom: 1%;
+    position: relative;
+    margin-top: -20%;
+}
+
+.modal1-title-font{
+    font-size: 1.6em;
+}
+
+.modal1-inner {
+    padding: 5%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.separator-div-modal-1{
+    height: 20px;
+}
+
+.separator-div-modal-form-1{
+    height: 7px;
+}
+
+.contact-form-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5%;
+    text-align: center;
+    width: 80%;
+}
+
+.contact-form-courses input {
+    background-color: #F3F1E9;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    padding-left: 4%;
+    color: #261C52;
+}
+
+.modal-two-buttons-1{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send-button-1 :hover{
+    color :#F3F1E9;
+    background-color:#261C52 ;
+    text-decoration: none;
+}
+
+.send-button-modal-courses-1{
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 150;
+    border-style: none;
+    background-color: #ffd33a ;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.close-button-1 :hover{
+    color :#F3F1E9;
+    background-color:#261C52 ;
+    text-decoration: none;
+}
+
+.close-button-modal-courses-1{
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 150;
+    border-style: none;
+    background-color: #ffd33a ;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+/* ---Responsive Design MEDIUM --- */
+
+@media screen and (min-width: 768px) and (max-width:992px){
+
+    .modal1 {
+        margin-left: -25%;
+        margin-right: -25%;
+        margin-top: -25%;
+    }
+
+}
+
+/* ---End of Responsive Design MEDIUM --- */
+
+
+
+/* ---Responsive Design SMALL --- */
+
+@media screen and (min-width: 576px) and  (max-width: 767px){
+
+    .modal1 {
+        font-size: 1.2em;
+        margin-left: -25%;
+        margin-right: -25%;
+        margin-top: -30%;
+    }
+
+    .modal1-title-font{
+        font-size: 1.4em;
+    }
+    
+}
+
+/* ---End of Responsive Design SMALL --- */
+
+
+
+/* ---Responsive Design EXTRA SMALL --- */
+
+@media screen and (min-width: 526px) and (max-width: 575px){
+
+    .modal1 {
+        font-size: 1.1em;
+        margin-left: -30%;
+        margin-right: -30%;
+        margin-top: -30%;
+    }
+
+    .modal1-title-font{
+        font-size: 1.3em;
+    }
+    
+}
+
+/* ---End of Responsive Design EXTRA SMALL --- */
+
+/* ---Responsive Design EXTRA EXTRA SMALL --- */
+
+@media screen and (min-width: 450px) and (max-width: 525px){
+    .modal1 {
+        font-size: 1.1em;
+        margin-left: -37%;
+        margin-right: -37%;
+        margin-top: -30%;
+    }
+
+    .modal1-title-font{
+        font-size: 1.3em;
+    }
+    
+}
+
+/* ---End of Responsive Design EXTRA EXTRA SMALL --- */
+
+/* ---Responsive Design EXTRA EXTRA SMALL --- */
+
+@media screen and (max-width: 449px){
+    .modal1 {
+        font-size: 0.9em;
+        margin-left: -5%;
+        margin-right: -5%;
+        margin-top: -30%;
+    }
+
+    .modal1-title-font{
+        font-size: 1.1em;
+    }
+    
+}
+
+/* ---End of Responsive Design EXTRA EXTRA SMALL --- */
+
+/* -- END OF MODAL 1--*/
+
